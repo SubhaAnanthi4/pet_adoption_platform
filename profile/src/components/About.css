@@ -1,0 +1,81 @@
+/* About section container */
+.about-us {
+    background-image: url('http://surl.li/cjhsbu'); /* Use the image as background */
+    background-size: cover; /* Ensure the image covers the whole background */
+    background-position: center; /* Center the background image */
+    min-height: 100vh; /* Ensure full height of the viewport */
+    display: flex;
+    align-items: center; /* Vertically align the content */
+    justify-content: center; /* Center the content horizontally */
+    position: relative;
+}
+
+/* About container - content box above the image */
+.about-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 8px; /* Optional: for rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+    max-width: 800px; /* Adjust width to suit your design */
+    width: 100%;
+    text-align: center; /* Center align the text */
+    z-index: 1; /* Ensure it's above the background image */
+}
+
+/* Styling for heading */
+.about-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Styling for paragraphs */
+.about-us p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* List styling */
+.about-us ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.about-us ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Styling for links inside the About section */
+.about-us a {
+    color: #FFD700; /* Change link color for better visibility */
+    text-decoration: underline; /* Optional: underline links */
+}
+
+/* Optional: Styling for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .about-us h1 {
+        font-size: 2rem;
+    }
+
+    .about-us h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-us p, .about-us ul li {
+        font-size: 1rem;
+    }
+}

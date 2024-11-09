@@ -1,0 +1,124 @@
+/* General container for Signup page */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7fc;
+  padding: 0 20px;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.form-container {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-subtitle {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px; /* Increased space between inputs */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.form-container input:focus {
+  outline: none;
+  border-color: #007bff !important; /* Ensure blue border on focus */
+}
+
+/* Checkbox container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+.checkbox-container label {
+  font-size: 0.9em;
+}
+
+.checkbox-container span {
+  color: #007bff !important; /* Ensure blue color for this text */
+  text-decoration: underline;
+}
+
+/* Button styling */
+.button {
+  width: 50%;
+  padding: 12px;
+  background-color: #007bff !important; /* Ensure blue background */
+  color: white !important; /* Ensure white text */
+  font-size: 1.1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3 !important; /* Ensure blue hover color */
+}
+
+/* Footer text */
+.footer-text {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #555;
+}
+
+.footer-text a {
+  color: #007bff !important; /* Ensure blue link */
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}

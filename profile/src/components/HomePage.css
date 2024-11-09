@@ -1,0 +1,64 @@
+.homepage {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.banner {
+  margin-bottom: 20px;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.explore-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #129cf1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures 3 images per row */
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.pet-image {
+  width: 100%;
+  max-width: 300px; /* Consistent width */
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures image scales without distortion */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pet-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds subtle shadow on hover */
+}
+/* Styling for the login button to make it permanently black */
+.login-btn {
+  background-color: black !important; /* Set the background color to black */
+  color: white !important; /* Set the text color to white */
+  border: none !important; /* Remove any border */
+}
+
+.login-btn:hover {
+  background-color: #333 !important; /* Darker black shade when hovered */
+  color: white !important; /* Ensure text stays white */
+}

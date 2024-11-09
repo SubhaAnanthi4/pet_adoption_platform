@@ -1,0 +1,155 @@
+/* General Container Layout for Sell Pet Form */
+.sell-pet-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures that content starts from top */
+    min-height: 100vh; /* Ensures full viewport height */
+    background: linear-gradient(to right, #f3f3f3, #ebedeb); /* Background gradient */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* The form itself */
+  .sell-pet-form {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    flex-grow: 1; /* Allows the form to take up available space */
+  }
+  
+  /* Form Title */
+  .sell-pet-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Input fields styling */
+  .input-box {
+    margin-bottom: 20px;
+  }
+  
+  .input-box label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .input-box input,
+  .input-box textarea,
+  .input-box select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-box input:focus,
+  .input-box textarea:focus,
+  .input-box select:focus {
+    border-color: #4CAF50;
+  }
+  
+  .input-box textarea {
+    resize: vertical;
+  }
+  
+  /* File input */
+  .file-input-label {
+    display: inline-block;
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .file-input-label:hover {
+    background-color: #45a049;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .file-input-text {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #E64A19;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #FF0000;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Footer Styles */
+  .sell-pet-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .sell-pet-footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .sell-pet-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 480px) {
+    .sell-pet-form {
+      padding: 20px;
+    }
+  
+    .sell-pet-title {
+      font-size: 22px;
+    }
+  
+    .submit-btn {
+      font-size: 16px;
+    }
+  
+    .input-box input,
+    .input-box textarea,
+    .input-box select {
+      font-size: 14px;
+    }
+  }
+  
